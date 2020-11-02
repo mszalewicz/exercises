@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/urizen/exercism/cpp/isogram/isogram.cpp" "/home/urizen/exercism/cpp/isogram/build/CMakeFiles/isogram.dir/isogram.cpp.o"
-  "/home/urizen/exercism/cpp/isogram/isogram_test.cpp" "/home/urizen/exercism/cpp/isogram/build/CMakeFiles/isogram.dir/isogram_test.cpp.o"
-  "/home/urizen/exercism/cpp/isogram/test/tests-main.cpp" "/home/urizen/exercism/cpp/isogram/build/CMakeFiles/isogram.dir/test/tests-main.cpp.o"
+  "/home/urizen/exercises/exercism/isogram/isogram.cpp" "/home/urizen/exercises/exercism/isogram/build/CMakeFiles/isogram.dir/isogram.cpp.o"
+  "/home/urizen/exercises/exercism/isogram/isogram_test.cpp" "/home/urizen/exercises/exercism/isogram/build/CMakeFiles/isogram.dir/isogram_test.cpp.o"
+  "/home/urizen/exercises/exercism/isogram/test/tests-main.cpp" "/home/urizen/exercises/exercism/isogram/build/CMakeFiles/isogram.dir/test/tests-main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

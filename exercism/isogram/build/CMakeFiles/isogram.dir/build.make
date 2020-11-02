@@ -62,10 +62,10 @@ RM = /home/urizen/cmake-3.18.4-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/urizen/exercism/cpp/isogram
+CMAKE_SOURCE_DIR = /home/urizen/exercises/exercism/isogram
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/urizen/exercism/cpp/isogram/build
+CMAKE_BINARY_DIR = /home/urizen/exercises/exercism/isogram/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/isogram.dir/depend.make
@@ -78,42 +78,42 @@ include CMakeFiles/isogram.dir/flags.make
 
 CMakeFiles/isogram.dir/isogram_test.cpp.o: CMakeFiles/isogram.dir/flags.make
 CMakeFiles/isogram.dir/isogram_test.cpp.o: ../isogram_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/urizen/exercism/cpp/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/isogram.dir/isogram_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isogram.dir/isogram_test.cpp.o -c /home/urizen/exercism/cpp/isogram/isogram_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/urizen/exercises/exercism/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/isogram.dir/isogram_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isogram.dir/isogram_test.cpp.o -c /home/urizen/exercises/exercism/isogram/isogram_test.cpp
 
 CMakeFiles/isogram.dir/isogram_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/isogram.dir/isogram_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/urizen/exercism/cpp/isogram/isogram_test.cpp > CMakeFiles/isogram.dir/isogram_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/urizen/exercises/exercism/isogram/isogram_test.cpp > CMakeFiles/isogram.dir/isogram_test.cpp.i
 
 CMakeFiles/isogram.dir/isogram_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/isogram.dir/isogram_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/urizen/exercism/cpp/isogram/isogram_test.cpp -o CMakeFiles/isogram.dir/isogram_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/urizen/exercises/exercism/isogram/isogram_test.cpp -o CMakeFiles/isogram.dir/isogram_test.cpp.s
 
 CMakeFiles/isogram.dir/isogram.cpp.o: CMakeFiles/isogram.dir/flags.make
 CMakeFiles/isogram.dir/isogram.cpp.o: ../isogram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/urizen/exercism/cpp/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/isogram.dir/isogram.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isogram.dir/isogram.cpp.o -c /home/urizen/exercism/cpp/isogram/isogram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/urizen/exercises/exercism/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/isogram.dir/isogram.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isogram.dir/isogram.cpp.o -c /home/urizen/exercises/exercism/isogram/isogram.cpp
 
 CMakeFiles/isogram.dir/isogram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/isogram.dir/isogram.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/urizen/exercism/cpp/isogram/isogram.cpp > CMakeFiles/isogram.dir/isogram.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/urizen/exercises/exercism/isogram/isogram.cpp > CMakeFiles/isogram.dir/isogram.cpp.i
 
 CMakeFiles/isogram.dir/isogram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/isogram.dir/isogram.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/urizen/exercism/cpp/isogram/isogram.cpp -o CMakeFiles/isogram.dir/isogram.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/urizen/exercises/exercism/isogram/isogram.cpp -o CMakeFiles/isogram.dir/isogram.cpp.s
 
 CMakeFiles/isogram.dir/test/tests-main.cpp.o: CMakeFiles/isogram.dir/flags.make
 CMakeFiles/isogram.dir/test/tests-main.cpp.o: ../test/tests-main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/urizen/exercism/cpp/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/isogram.dir/test/tests-main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isogram.dir/test/tests-main.cpp.o -c /home/urizen/exercism/cpp/isogram/test/tests-main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/urizen/exercises/exercism/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/isogram.dir/test/tests-main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isogram.dir/test/tests-main.cpp.o -c /home/urizen/exercises/exercism/isogram/test/tests-main.cpp
 
 CMakeFiles/isogram.dir/test/tests-main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/isogram.dir/test/tests-main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/urizen/exercism/cpp/isogram/test/tests-main.cpp > CMakeFiles/isogram.dir/test/tests-main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/urizen/exercises/exercism/isogram/test/tests-main.cpp > CMakeFiles/isogram.dir/test/tests-main.cpp.i
 
 CMakeFiles/isogram.dir/test/tests-main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/isogram.dir/test/tests-main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/urizen/exercism/cpp/isogram/test/tests-main.cpp -o CMakeFiles/isogram.dir/test/tests-main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/urizen/exercises/exercism/isogram/test/tests-main.cpp -o CMakeFiles/isogram.dir/test/tests-main.cpp.s
 
 # Object files for target isogram
 isogram_OBJECTS = \
@@ -129,7 +129,7 @@ isogram: CMakeFiles/isogram.dir/isogram.cpp.o
 isogram: CMakeFiles/isogram.dir/test/tests-main.cpp.o
 isogram: CMakeFiles/isogram.dir/build.make
 isogram: CMakeFiles/isogram.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/urizen/exercism/cpp/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable isogram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/urizen/exercises/exercism/isogram/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable isogram"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/isogram.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +142,6 @@ CMakeFiles/isogram.dir/clean:
 .PHONY : CMakeFiles/isogram.dir/clean
 
 CMakeFiles/isogram.dir/depend:
-	cd /home/urizen/exercism/cpp/isogram/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/urizen/exercism/cpp/isogram /home/urizen/exercism/cpp/isogram /home/urizen/exercism/cpp/isogram/build /home/urizen/exercism/cpp/isogram/build /home/urizen/exercism/cpp/isogram/build/CMakeFiles/isogram.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/urizen/exercises/exercism/isogram/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/urizen/exercises/exercism/isogram /home/urizen/exercises/exercism/isogram /home/urizen/exercises/exercism/isogram/build /home/urizen/exercises/exercism/isogram/build /home/urizen/exercises/exercism/isogram/build/CMakeFiles/isogram.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/isogram.dir/depend
 

@@ -63,10 +63,10 @@ RM = /home/urizen/cmake-3.18.4-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/urizen/exercism/cpp/isogram
+CMAKE_SOURCE_DIR = /home/urizen/exercises/exercism/isogram
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/urizen/exercism/cpp/isogram/build
+CMAKE_BINARY_DIR = /home/urizen/exercises/exercism/isogram/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -95,14 +95,14 @@ clean: CMakeFiles/isogram.dir/clean
 CMakeFiles/test_isogram.dir/all: CMakeFiles/isogram.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_isogram.dir/build.make CMakeFiles/test_isogram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_isogram.dir/build.make CMakeFiles/test_isogram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/urizen/exercism/cpp/isogram/build/CMakeFiles --progress-num= "Built target test_isogram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/urizen/exercises/exercism/isogram/build/CMakeFiles --progress-num= "Built target test_isogram"
 .PHONY : CMakeFiles/test_isogram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_isogram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercism/cpp/isogram/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercises/exercism/isogram/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_isogram.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercism/cpp/isogram/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercises/exercism/isogram/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_isogram.dir/rule
 
 # Convenience name for target.
@@ -122,14 +122,14 @@ CMakeFiles/test_isogram.dir/clean:
 CMakeFiles/isogram.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isogram.dir/build.make CMakeFiles/isogram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isogram.dir/build.make CMakeFiles/isogram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/urizen/exercism/cpp/isogram/build/CMakeFiles --progress-num=1,2,3,4 "Built target isogram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/urizen/exercises/exercism/isogram/build/CMakeFiles --progress-num=1,2,3,4 "Built target isogram"
 .PHONY : CMakeFiles/isogram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isogram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercism/cpp/isogram/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercises/exercism/isogram/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isogram.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercism/cpp/isogram/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/urizen/exercises/exercism/isogram/build/CMakeFiles 0
 .PHONY : CMakeFiles/isogram.dir/rule
 
 # Convenience name for target.

@@ -62,10 +62,10 @@ RM = /home/urizen/cmake-3.18.4-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/urizen/exercism/cpp/isogram
+CMAKE_SOURCE_DIR = /home/urizen/exercises/exercism/isogram
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/urizen/exercism/cpp/isogram/build
+CMAKE_BINARY_DIR = /home/urizen/exercises/exercism/isogram/build
 
 # Utility rule file for test_isogram.
 
@@ -90,6 +90,6 @@ CMakeFiles/test_isogram.dir/clean:
 .PHONY : CMakeFiles/test_isogram.dir/clean
 
 CMakeFiles/test_isogram.dir/depend:
-	cd /home/urizen/exercism/cpp/isogram/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/urizen/exercism/cpp/isogram /home/urizen/exercism/cpp/isogram /home/urizen/exercism/cpp/isogram/build /home/urizen/exercism/cpp/isogram/build /home/urizen/exercism/cpp/isogram/build/CMakeFiles/test_isogram.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/urizen/exercises/exercism/isogram/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/urizen/exercises/exercism/isogram /home/urizen/exercises/exercism/isogram /home/urizen/exercises/exercism/isogram/build /home/urizen/exercises/exercism/isogram/build /home/urizen/exercises/exercism/isogram/build/CMakeFiles/test_isogram.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_isogram.dir/depend
 
