@@ -8,5 +8,6 @@ else()
     add_compile_options(-std=c++20 -Wall -Wextra -pedantic)
 endif()
 
-add_executable(problem_1 problem_1.cpp)
-add_executable(problem_2 problem_2.cpp)
+add_executable(problem_001 problem_001.cpp)
+add_executable(problem_002 problem_002.cpp)
+add_executable(problem_003 problem_003.cpp)
