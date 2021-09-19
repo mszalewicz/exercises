@@ -1,11 +1,13 @@
 #include <cmath>
 #include <iostream>
 
-// Problem resolves the prime factorization (https://en.wikipedia.org/wiki/Integer_factorization)
-
 int main()
 {
-	int biggest_prime = 1;
+	// Problem 3
+
+	// The prime factors of 13195 are 5, 7, 13 and 29.
+	// What is the largest prime factor of the number 600851475143 ?
+
 	unsigned long long number = 600851475143;
 
 	while(number % 2 == 0)
@@ -22,7 +24,10 @@ int main()
 	}
 
 	// At the end we end up with two primes: 'i' and 'number', where i is smaller, hence
-	std::cout << "\nLargest prime factor of the number 600851475143: " << number << "\n\n";
+	std::cout << "\n"
+			  << "Largest prime factor of the number 600851475143: "
+			  << number
+			  << "\n\n";
 
 	return 0;
 }
