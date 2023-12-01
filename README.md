@@ -11,5 +11,5 @@ Feel free to explore the solutions, compare implementations, and adapt the code 
 To get started, clone this private repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/my-private-solutions.git
+git clone https://github.com/mszalewicz/exercises.git
 ```
