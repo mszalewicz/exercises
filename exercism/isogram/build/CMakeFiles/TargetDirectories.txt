@@ -1,4 +1,0 @@
-/home/urizen/exercises/exercism/isogram/build/CMakeFiles/rebuild_cache.dir
-/home/urizen/exercises/exercism/isogram/build/CMakeFiles/edit_cache.dir
-/home/urizen/exercises/exercism/isogram/build/CMakeFiles/test_isogram.dir
-/home/urizen/exercises/exercism/isogram/build/CMakeFiles/isogram.dir
