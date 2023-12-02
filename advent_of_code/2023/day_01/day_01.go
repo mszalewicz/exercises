@@ -157,7 +157,7 @@ func solution_part_b() {
 				text_window[j] = text_window[j-1]
 			}
 
-			// add new rune at the end
+			// add new rune at the beginning (reading from the back)
 			text_window[0] = runes[i]
 
 			// check for 3, 4 ,5 letter words
@@ -189,8 +189,6 @@ func solution_part_b() {
 
 		number_result, err := strconv.Atoi(number_text)
 
-		// fmt.Println("test")
-
 		if err != nil {
 			fmt.Println("Error during string to int conversion. Error:")
 			fmt.Println(err)
@@ -210,7 +208,7 @@ func solution_part_b() {
 
 }
 
-func day_01() {
+func main() {
 
 	// To maintain the original (a) solution, duplicate code in solution_part_a and solution_part_b is
 	// replicated instead of being stored in separate functions. This method is selected to enhance
