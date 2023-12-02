@@ -13,7 +13,7 @@ func solution_part_a() {
 	// last digit (in that order) to form a single two-digit number.
 
 	var numbers []int
-	var result int
+	var result_solution_a int
 
 	readFile, fileScanner := open_file("inputs/day_01_a.txt")
 
@@ -57,14 +57,13 @@ func solution_part_a() {
 		numbers = append(numbers, number_result)
 	}
 
-	readFile.Close()
-
 	for _, number := range numbers {
-		result += number
+		result_solution_a += number
 	}
 
-	fmt.Println("Result 1: " + fmt.Sprint(result))
+	fmt.Println(result_solution_a)
 
+	readFile.Close()
 }
 
 func solution_part_b() {
@@ -73,7 +72,7 @@ func solution_part_b() {
 	//three, four, five, six, seven, eight, and nine also count as valid "digits".
 
 	var numbers []int
-	var result int
+	var result_solution_b int
 
 	digits := map[string]rune{
 		"one":   '1',
@@ -198,14 +197,13 @@ func solution_part_b() {
 		numbers = append(numbers, number_result)
 	}
 
-	readFile.Close()
-
 	for _, number := range numbers {
-		result += number
+		result_solution_b += number
 	}
 
-	fmt.Println("Result 2: " + fmt.Sprint(result))
+	fmt.Println(result_solution_b)
 
+	readFile.Close()
 }
 
 func main() {
