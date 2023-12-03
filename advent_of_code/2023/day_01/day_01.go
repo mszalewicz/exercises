@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"time"
 	"unicode"
 )
 
@@ -13,7 +14,7 @@ func solution_part_a() {
 	// last digit (in that order) to form a single two-digit number.
 
 	var numbers []int
-	var result_solution_a int
+	var result1 int
 
 	readFile, fileScanner := open_file("inputs/day_01_a.txt")
 
@@ -58,10 +59,10 @@ func solution_part_a() {
 	}
 
 	for _, number := range numbers {
-		result_solution_a += number
+		result1 += number
 	}
 
-	fmt.Println(result_solution_a)
+	fmt.Println(result1)
 
 	readFile.Close()
 }
@@ -72,7 +73,7 @@ func solution_part_b() {
 	//three, four, five, six, seven, eight, and nine also count as valid "digits".
 
 	var numbers []int
-	var result_solution_b int
+	var result2 int
 
 	digits := map[string]rune{
 		"one":   '1',
@@ -198,10 +199,10 @@ func solution_part_b() {
 	}
 
 	for _, number := range numbers {
-		result_solution_b += number
+		result2 += number
 	}
 
-	fmt.Println(result_solution_b)
+	fmt.Println(result2)
 
 	readFile.Close()
 }
@@ -212,7 +213,11 @@ func main() {
 	// replicated instead of being stored in separate functions. This method is selected to enhance
 	// the clarity and conciseness when reviewing the solution.
 
+	start := time.Now()
+
 	solution_part_a()
 	solution_part_b()
 
+	elapsed := time.Since(start)
+	fmt.Println("time " + fmt.Sprint(elapsed))
 }

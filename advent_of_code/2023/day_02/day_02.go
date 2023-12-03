@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+	"time"
 )
 
 type pixel struct {
@@ -17,7 +18,7 @@ type game struct {
 	isPossible bool
 }
 
-func isValidGame(current_game game) bool {
+func isValidGame(current_game *game) bool {
 
 	max_r := 12
 	max_g := 13
@@ -32,24 +33,14 @@ func isValidGame(current_game game) bool {
 	return true
 }
 
-func findMinimalPossibleSetsPower(batch game) int {
+func findMinimalPossibleSetsPower(batch *game) int {
 
-	var (
-		r int
-		g int
-		b int
-	)
+	var r, g, b int
 
 	for _, pixels := range batch.pixels {
-		if pixels.r > r {
-			r = pixels.r
-		}
-		if pixels.g > g {
-			g = pixels.g
-		}
-		if pixels.b > b {
-			b = pixels.b
-		}
+		r = max(pixels.r)
+		g = max(pixels.g)
+		b = max(pixels.b)
 	}
 
 	return r * g * b
@@ -57,8 +48,10 @@ func findMinimalPossibleSetsPower(batch game) int {
 
 func main() {
 
-	readFile, fileScanner := open_file("inputs/day_02_a.txt")
+	readFile, fileScanner := open_file("inputs/day_02.txt")
 	var games []game
+
+	start := time.Now()
 
 	for fileScanner.Scan() {
 		text := fileScanner.Text()
@@ -81,11 +74,11 @@ func main() {
 
 				switch color_type[0] {
 				case 'r':
-					current_pixel.r, _ = strconv.Atoi(string(color_value))
+					current_pixel.r, _ = strconv.Atoi(color_value)
 				case 'g':
-					current_pixel.g, _ = strconv.Atoi(string(color_value))
+					current_pixel.g, _ = strconv.Atoi(color_value)
 				case 'b':
-					current_pixel.b, _ = strconv.Atoi(string(color_value))
+					current_pixel.b, _ = strconv.Atoi(color_value)
 				}
 			}
 
@@ -94,25 +87,28 @@ func main() {
 		games = append(games, current_game)
 	}
 
-	var counter_solution_a int
+	var result1 int
 
 	for _, game := range games {
-		if !isValidGame(game) {
+		if !isValidGame(&game) {
 			game.isPossible = false
 			continue
 		} else {
-			counter_solution_a += int(game.id)
+			result1 += int(game.id)
 		}
 	}
 
-	var counter_solution_b int
+	var result2 int
 
 	for _, game := range games {
-		counter_solution_b += findMinimalPossibleSetsPower(game)
+		result2 += findMinimalPossibleSetsPower(&game)
 	}
 
-	fmt.Println(counter_solution_a)
-	fmt.Println(counter_solution_b)
+	elapsed := time.Since(start)
+
+	fmt.Println(result1)
+	fmt.Println(result2)
+	fmt.Println("time " + fmt.Sprint(elapsed))
 
 	readFile.Close()
 }
