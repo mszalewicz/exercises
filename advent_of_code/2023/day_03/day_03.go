@@ -79,20 +79,6 @@ func main() {
 		gears[z] = gears_row
 	}
 
-	/*
-		Original idea of creating [][]Gear, duplicating the same []Gear
-		row over multiple rows. Lead to situation were given y poisiton was
-		updated the same over all rows.
-
-			gears_row := make([]Gear, max_length)
-			for k := 0; k < max_length; k++ {
-				gears_row[k] = Gear{ratio: 1, adjacentNumbers: 0}
-			}
-			for z := 0; z < max_height; z++ {
-				gears[z] = gears_row
-			}
-	*/
-
 	for y, row := range rows {
 		hasNeighbours := false
 		var gearPoints []Point
