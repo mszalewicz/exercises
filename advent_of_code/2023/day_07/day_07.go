@@ -24,16 +24,16 @@ func readHand(text string) Hand {
 		'A': 12,
 		'K': 11,
 		'Q': 10,
-		'J': 9,
-		'T': 8,
-		'9': 7,
-		'8': 6,
-		'7': 5,
-		'6': 4,
-		'5': 3,
-		'4': 2,
-		'3': 1,
-		'2': 0,
+		'T': 9,
+		'9': 8,
+		'8': 7,
+		'7': 6,
+		'6': 5,
+		'5': 4,
+		'4': 3,
+		'3': 2,
+		'2': 1,
+		'J': 0,
 	}
 
 	cardsText := values[0]
@@ -54,6 +54,9 @@ func readHand(text string) Hand {
 		cumulativeCardsTypes[card] = cumulativeCardsTypes[card] + 1
 	}
 
+	jokers := cumulativeCardsTypes[0]
+	cumulativeCardsTypes[0] = 0
+
 	var higherCounter uint8 = 0
 	var lowerCounter uint8 = 0
 
@@ -65,6 +68,8 @@ func readHand(text string) Hand {
 			lowerCounter = value
 		}
 	}
+
+	higherCounter += jokers
 
 	typesMap := map[uint8]uint8{
 		5: 6,
@@ -166,13 +171,13 @@ func main() {
 		insertHand(hand, &hands)
 	}
 
-	answer1 := 0
+	answer := 0
 
 	for index, hand := range hands {
-		answer1 += (index + 1) * hand.bid
+		answer += (index + 1) * hand.bid
 	}
 
 	elapsed := time.Since(start)
-	fmt.Println(answer1)
+	fmt.Println(answer)
 	fmt.Println("time " + fmt.Sprint(elapsed))
 }
