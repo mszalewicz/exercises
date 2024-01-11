@@ -6,6 +6,8 @@ import (
 	"os"
 	"strings"
 	"time"
+
+	"github.com/mszalewicz/simplemath"
 )
 
 type Node struct {
@@ -42,7 +44,7 @@ func countSteps(graph *[]Node, startingNodeIndex int, instructions string, condi
 
 		steps += 1
 
-		if node.name == "ZZZ" {
+		if node.name[len(node.name)-len(condition):] == condition {
 			break
 		}
 	}
@@ -51,6 +53,7 @@ func countSteps(graph *[]Node, startingNodeIndex int, instructions string, condi
 }
 
 func main() {
+
 	input, err := os.ReadFile("input/day_08")
 
 	if err != nil {
@@ -64,6 +67,7 @@ func main() {
 
 	var graph []Node
 	startingNodeIndex := 0
+	var nodesEndingWithA []int
 
 	for index, node := range nodes {
 		fields := strings.Fields(node)
@@ -77,13 +81,31 @@ func main() {
 			startingNodeIndex = index
 		}
 
+		if newNode.name[2] == 'A' {
+			nodesEndingWithA = append(nodesEndingWithA, index)
+		}
+
 		graph = append(graph, newNode)
 	}
 
 	connectGraph(&graph)
 	steps := countSteps(&graph, startingNodeIndex, instructions, "ZZZ")
 
+	var minimalStepsAllPaths []int
+
+	for _, startingIndex := range nodesEndingWithA {
+		pathSteps := countSteps(&graph, startingIndex, instructions, "Z")
+		minimalStepsAllPaths = append(minimalStepsAllPaths, pathSteps)
+	}
+
+	t1 := minimalStepsAllPaths[0]
+	t2 := minimalStepsAllPaths[1]
+	t3 := minimalStepsAllPaths[2:]
+
+	steps2 := simplemath.LCM(t1, t2, t3...)
+
 	elapsed := time.Since(start)
 	fmt.Println(steps)
+	fmt.Println(steps2)
 	fmt.Println("time " + fmt.Sprint(elapsed))
 }
