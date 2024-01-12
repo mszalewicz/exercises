@@ -60,7 +60,7 @@ func populateStructure(numbers *[][]int) {
 	}
 }
 
-func calculateResult(numbers *[][]int) int {
+func calculateResultA(numbers *[][]int) int {
 	result := 0
 	firstStep := true
 
@@ -82,6 +82,28 @@ func calculateResult(numbers *[][]int) int {
 	return result
 }
 
+func calculateResultB(numbers *[][]int) int {
+	result := 0
+	firstStep := true
+
+	for i := len(*numbers) - 1; i > 0; i-- {
+
+		if firstStep {
+			n1 := (*numbers)[i][0]
+			n2 := (*numbers)[i-1][0]
+
+			result = n2 - n1
+
+			firstStep = false
+		} else {
+			result = (*numbers)[i-1][0] - result
+		}
+
+	}
+
+	return result
+}
+
 func main() {
 
 	start := time.Now()
@@ -95,6 +117,7 @@ func main() {
 	lines := strings.Split(string(content), "\n")
 
 	result1 := 0
+	result2 := 0
 
 	for _, line := range lines {
 
@@ -105,10 +128,12 @@ func main() {
 
 		bootstrapStructure(&numbers, &row, &line)
 		populateStructure(&numbers)
-		result1 += calculateResult(&numbers)
+		result1 += calculateResultA(&numbers)
+		result2 += calculateResultB(&numbers)
 	}
 
 	elapsed := time.Since(start)
 	fmt.Println(result1)
+	fmt.Println(result2)
 	fmt.Println(elapsed)
 }
