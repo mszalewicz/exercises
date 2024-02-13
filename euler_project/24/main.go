@@ -13,7 +13,7 @@ func factorial(number int) int {
 	return result
 }
 
-// Heap's Algorithm for generating permutations:
+// Heap's Algorithm for generating permutations
 func generatePermutations(digits []rune, size int, allPermutations *[]string) {
 	if size == 1 {
 		*allPermutations = append(*allPermutations, string(digits))
