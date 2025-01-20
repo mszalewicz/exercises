@@ -5,8 +5,8 @@ import (
 	"testing"
 )
 
-func Test(t *testing.T) {
-	functionName := "Test"
+func TestReverseWords(t *testing.T) {
+	functionName := "TestReverseWords"
 	testCases := []struct {
 		text     string
 		expected string

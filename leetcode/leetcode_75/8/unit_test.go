@@ -5,8 +5,8 @@ import (
 	"testing"
 )
 
-func Test(t *testing.T) {
-	functionName := "Test"
+func TestTriplets(t *testing.T) {
+	functionName := "TestTriplets"
 	testCases := []struct {
 		numbers  []int
 		expected bool

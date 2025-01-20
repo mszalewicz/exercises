@@ -5,8 +5,8 @@ import (
 	"testing"
 )
 
-func Test(t *testing.T) {
-	functionName := "Test"
+func TestProduct(t *testing.T) {
+	functionName := "TestProduct"
 	testCases := []struct {
 		numbers  []int
 		expected []int
