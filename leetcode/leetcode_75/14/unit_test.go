@@ -5,8 +5,8 @@ import (
 	"testing"
 )
 
-func Test(t *testing.T) {
-	functionName := "Test"
+func TestMaxAverage(t *testing.T) {
+	functionName := "TestMaxAverage"
 
 	testCases := []struct {
 		nums     []int
