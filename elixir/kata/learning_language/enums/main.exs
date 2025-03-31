@@ -31,3 +31,24 @@ test =
   |> Enum.reduce(fn x, acc -> x * acc end)
 
 IO.inspect(test)
+
+IO.puts("-------------------------------------")
+
+numbers |> Enum.count(fn n -> n >= 4 or n <= 2 end) |> IO.inspect()
+
+IO.puts("-------------------------------------")
+
+randomNumbers = Enum.map(1..12, fn _ -> :rand.uniform(400) end)
+
+randomNumbers
+|> Enum.chunk_every(2, 1, :discard)
+|> Enum.count(fn input ->
+  increasing = input |> Enum.all?(fn [a, b] -> a < b end)
+  decreasing = input |> Enum.all?(fn [a, b] -> a > b end)
+
+  valid_differences = input |> Enum.all?(fn [a, b] -> abs(a - b) in 1..3 end)
+
+  (increasing or decreasing) and valid_differences
+
+end)
+# |> IO.inspect(charlists: :as_lists)
